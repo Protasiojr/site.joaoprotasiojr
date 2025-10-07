@@ -42,31 +42,94 @@ export default function Home() {
   };
 
   const optionsDots = {
+    plugins: {
+      legend: {
+        labels: {
+          color: 'white'
+        }
+      },
+      tooltip: {
+        titleColor: 'white',
+        bodyColor: 'white'
+      }
+    },
     scales: {
       r: {
+        ticks: {
+          color: 'white'
+        },
+        pointLabels: {
+          color: 'white'
+        },
         grid: {
+          color: 'rgba(255,255,255,0.1)',
           circular: false,
         },
+        angleLines: {
+          color: 'rgba(255,255,255,0.1)'
+        }
       },
     },
   };
 
   const optionsGridFilled = {
+    plugins: {
+      legend: {
+        labels: {
+          color: 'white'
+        }
+      },
+      tooltip: {
+        titleColor: 'white',
+        bodyColor: 'white'
+      }
+    },
     scales: {
       r: {
+        ticks: {
+          color: 'white'
+        },
+        pointLabels: {
+          color: 'white'
+        },
         grid: {
+          color: 'rgba(255,255,255,0.1)',
           circular: false,
         },
+        angleLines: {
+          color: 'rgba(255,255,255,0.1)'
+        }
       },
     },
   };
 
   const optionsGridCircle = {
+    plugins: {
+      legend: {
+        labels: {
+          color: 'white'
+        }
+      },
+      tooltip: {
+        titleColor: 'white',
+        bodyColor: 'white'
+      }
+    },
     scales: {
       r: {
+        ticks: {
+          color: 'white'
+        },
+        pointLabels: {
+          color: 'white'
+        },
         grid: {
+          color: 'rgba(255,255,255,0.1)',
           circular: true,
         },
+        angleLines: {
+          color: 'rgba(255,255,255,0.1)'
+        }
       },
     },
   };
