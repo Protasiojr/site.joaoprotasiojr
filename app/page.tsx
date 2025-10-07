@@ -1,6 +1,75 @@
+'use client';
+
 import { Phone, Globe, Users, Box, Video } from 'lucide-react';
+import { Radar } from 'react-chartjs-2';
+import { Chart as ChartJS, RadialLinearScale, PointElement, LineElement, Filler, Tooltip, Legend } from 'chart.js';
+
+ChartJS.register(RadialLinearScale, PointElement, LineElement, Filler, Tooltip, Legend);
 
 export default function Home() {
+  const dataDots = {
+    labels: ['Blender', 'Inkscape', 'Gimp', 'ComfyUI', 'DAZ', '5D Render'],
+    datasets: [{
+      label: 'Value',
+      data: [95, 89, 80, 75, 71, 87],
+      backgroundColor: 'rgba(251, 191, 36, 0.1)',
+      borderColor: '#fbbf24',
+      pointBackgroundColor: '#fbbf24',
+      pointRadius: 5,
+    }],
+  };
+
+  const dataGridFilled = {
+    labels: ['HTML', 'CSS', 'Javascript', 'Tailwind', 'Typescript', 'MySQL'],
+    datasets: [{
+      label: 'Value',
+      data: [97, 88, 96, 79, 93, 78],
+      backgroundColor: 'rgba(251, 191, 36, 0.6)',
+      borderColor: '#fbbf24',
+      fill: true,
+    }],
+  };
+
+  const dataGridCircle = {
+    labels: ['Imagens', 'Vídeos', 'Áudio', 'IA', 'Rede Social', 'Designer'],
+    datasets: [{
+      label: 'Value',
+      data: [86, 91, 82, 98, 79, 95],
+      backgroundColor: 'rgba(251, 191, 36, 0.3)',
+      borderColor: '#fbbf24',
+      fill: true,
+    }],
+  };
+
+  const optionsDots = {
+    scales: {
+      r: {
+        grid: {
+          circular: false,
+        },
+      },
+    },
+  };
+
+  const optionsGridFilled = {
+    scales: {
+      r: {
+        grid: {
+          circular: false,
+        },
+      },
+    },
+  };
+
+  const optionsGridCircle = {
+    scales: {
+      r: {
+        grid: {
+          circular: true,
+        },
+      },
+    },
+  };
   return (
     <main className="w-full max-w-[1920px] mx-auto">
       <section className="bg-[linear-gradient(to_bottom,transparent,theme(colors.slate.950)),url('/IMAGEM_DO_SITE.png')] bg-cover bg-center bg-no-repeat min-h-screen flex items-center">
@@ -33,6 +102,25 @@ export default function Home() {
               <Video className="w-12 h-12 mx-auto mb-4 text-yellow-600" />
               <h3 className="text-xl font-semibold mb-2 text-gray-200">Vídeos</h3>
               <p className="text-gray-300">Edição de vídeo para redes sociais</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="py-16 bg-slate-800">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center text-gray-200 mb-12">Ferramentas</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-slate-600 p-6 rounded-lg shadow-md text-center">
+              <h3 className="text-xl font-semibold mb-4 text-gray-200">Radar Chart - Dots</h3>
+              <Radar data={dataDots} options={optionsDots} />
+            </div>
+            <div className="bg-slate-600 p-6 rounded-lg shadow-md text-center">
+              <h3 className="text-xl font-semibold mb-4 text-gray-200">Radar Chart - Grid Filled</h3>
+              <Radar data={dataGridFilled} options={optionsGridFilled} />
+            </div>
+            <div className="bg-slate-600 p-6 rounded-lg shadow-md text-center">
+              <h3 className="text-xl font-semibold mb-4 text-gray-200">Radar Chart - Grid Circle</h3>
+              <Radar data={dataGridCircle} options={optionsGridCircle} />
             </div>
           </div>
         </div>
