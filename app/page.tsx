@@ -242,6 +242,42 @@ export default function Home() {
                   <h3 className="text-xl font-semibold text-gray-200">ComfyUI</h3>
                 </div>
               </CarouselItem>
+              <CarouselItem className="basis-1/3">
+                <div className="flex flex-col items-center">
+                  <Image src="/mysql.png" alt="MySQL" width={128} height={128} className="w-32 h-32 object-contain mb-4" />
+                  <h3 className="text-xl font-semibold text-gray-200">MySQL</h3>
+                </div>
+              </CarouselItem>
+              <CarouselItem className="basis-1/3">
+                <div className="flex flex-col items-center">
+                  <Image src="/html.png" alt="HTML" width={128} height={128} className="w-32 h-32 object-contain mb-4" />
+                  <h3 className="text-xl font-semibold text-gray-200">HTML</h3>
+                </div>
+              </CarouselItem>
+              <CarouselItem className="basis-1/3">
+                <div className="flex flex-col items-center">
+                  <Image src="/css.png" alt="CSS" width={128} height={128} className="w-32 h-32 object-contain mb-4" />
+                  <h3 className="text-xl font-semibold text-gray-200">CSS</h3>
+                </div>
+              </CarouselItem>
+              <CarouselItem className="basis-1/3">
+                <div className="flex flex-col items-center">
+                  <Image src="/js.png" alt="Javascript" width={128} height={128} className="w-32 h-32 object-contain mb-4" />
+                  <h3 className="text-xl font-semibold text-gray-200">Javascript</h3>
+                </div>
+              </CarouselItem>
+              <CarouselItem className="basis-1/3">
+                <div className="flex flex-col items-center">
+                  <Image src="/ts.png" alt="Typescript" width={128} height={128} className="w-32 h-32 object-contain mb-4" />
+                  <h3 className="text-xl font-semibold text-gray-200">Typescript</h3>
+                </div>
+              </CarouselItem>
+              <CarouselItem className="basis-1/3">
+                <div className="flex flex-col items-center">
+                  <Image src="/tailwind.png" alt="Tailwind" width={128} height={128} className="w-32 h-32 object-contain mb-4" />
+                  <h3 className="text-xl font-semibold text-gray-200">Tailwind</h3>
+                </div>
+              </CarouselItem>
             </CarouselContent>
             <CarouselPrevious />
             <CarouselNext />
