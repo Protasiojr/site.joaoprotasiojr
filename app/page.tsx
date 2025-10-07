@@ -12,26 +12,26 @@ export default function Home() {
       </section>
       <section className="py-16 bg-slate-700">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Nossos Serviços</h2>
+          <h2 className="text-3xl font-bold text-center text-gray-200 mb-12">Nossos Serviços</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-slate-600 p-6 rounded-lg shadow-md text-center">
               <Globe className="w-12 h-12 mx-auto mb-4 text-yellow-600" />
-              <h3 className="text-xl font-semibold mb-2">Páginas Web</h3>
+              <h3 className="text-xl font-semibold mb-2 text-gray-200">Páginas Web</h3>
               <p className="text-gray-300">Desenvolvimento de Páginas Web</p>
             </div>
             <div className="bg-slate-600 p-6 rounded-lg shadow-md text-center">
               <Users className="w-12 h-12 mx-auto mb-4 text-yellow-600" />
-              <h3 className="text-xl font-semibold mb-2">Redes Socias</h3>
+              <h3 className="text-xl font-semibold mb-2 text-gray-200">Redes Socias</h3>
               <p className="text-gray-300">Conteudo para redes sociais</p>
             </div>
             <div className="bg-slate-600 p-6 rounded-lg shadow-md text-center">
               <Box className="w-12 h-12 mx-auto mb-4 text-yellow-600" />
-              <h3 className="text-xl font-semibold mb-2">Modelo 3D</h3>
+              <h3 className="text-xl font-semibold mb-2 text-gray-200">Modelo 3D</h3>
               <p className="text-gray-300">Produtos em 3D para divulgação</p>
             </div>
             <div className="bg-slate-600 p-6 rounded-lg shadow-md text-center">
               <Video className="w-12 h-12 mx-auto mb-4 text-yellow-600" />
-              <h3 className="text-xl font-semibold mb-2">Vídeos</h3>
+              <h3 className="text-xl font-semibold mb-2 text-gray-200">Vídeos</h3>
               <p className="text-gray-300">Edição de vídeo para redes sociais</p>
             </div>
           </div>
