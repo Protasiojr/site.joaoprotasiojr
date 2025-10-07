@@ -178,7 +178,7 @@ export default function Home() {
       </section>
       <section className="py-16 bg-slate-800">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-gray-200 mb-12">Ferramentas</h2>
+          <h2 className="text-3xl font-bold text-center text-gray-200 mb-12">Melhores Habilidades</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-slate-600 p-6 rounded-lg shadow-md text-center">
               <h3 className="text-xl font-semibold mb-4 text-gray-200">Designer</h3>
@@ -203,40 +203,40 @@ export default function Home() {
       </section>
       <section className="py-16 bg-slate-800">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-gray-200 mb-12">Ferramentas de Design</h2>
-          <Carousel className="w-full max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-center text-gray-200 mb-12">Principais Ferramentas</h2>
+          <Carousel opts={{ slidesToScroll: 3 }} className="w-full max-w-4xl mx-auto">
             <CarouselContent>
-              <CarouselItem>
+              <CarouselItem className="basis-1/3">
                 <div className="flex flex-col items-center">
                   <Image src="/blender.png" alt="Blender" width={128} height={128} className="w-32 h-32 object-contain mb-4" />
                   <h3 className="text-xl font-semibold text-gray-200">Blender</h3>
                 </div>
               </CarouselItem>
-              <CarouselItem>
+              <CarouselItem className="basis-1/3">
                 <div className="flex flex-col items-center">
                   <Image src="/inkscape.png" alt="Inkscape" width={128} height={128} className="w-32 h-32 object-contain mb-4" />
                   <h3 className="text-xl font-semibold text-gray-200">Inkscape</h3>
                 </div>
               </CarouselItem>
-              <CarouselItem>
+              <CarouselItem className="basis-1/3">
                 <div className="flex flex-col items-center">
                   <Image src="/gimp.png" alt="Gimp" width={128} height={128} className="w-32 h-32 object-contain mb-4" />
                   <h3 className="text-xl font-semibold text-gray-200">Gimp</h3>
                 </div>
               </CarouselItem>
-              <CarouselItem>
+              <CarouselItem className="basis-1/3">
                 <div className="flex flex-col items-center">
                   <Image src="/daz.png" alt="DAZ" width={128} height={128} className="w-32 h-32 object-contain mb-4" />
                   <h3 className="text-xl font-semibold text-gray-200">DAZ</h3>
                 </div>
               </CarouselItem>
-              <CarouselItem>
+              <CarouselItem className="basis-1/3">
                 <div className="flex flex-col items-center">
                   <Image src="/D5.png" alt="D5 Render" width={128} height={128} className="w-32 h-32 object-contain mb-4" />
                   <h3 className="text-xl font-semibold text-gray-200">D5 Render</h3>
                 </div>
               </CarouselItem>
-              <CarouselItem>
+              <CarouselItem className="basis-1/3">
                 <div className="flex flex-col items-center">
                   <Image src="/comfyui.png" alt="ComfyUI" width={128} height={128} className="w-32 h-32 object-contain mb-4" />
                   <h3 className="text-xl font-semibold text-gray-200">ComfyUI</h3>
