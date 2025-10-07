@@ -17,22 +17,22 @@ export default function Home() {
             <div className="bg-slate-600 p-6 rounded-lg shadow-md text-center">
               <Globe className="w-12 h-12 mx-auto mb-4 text-yellow-600" />
               <h3 className="text-xl font-semibold mb-2">Páginas Web</h3>
-              <p className="text-gray-600">Desenvolvimento de Páginas Web</p>
+              <p className="text-gray-300">Desenvolvimento de Páginas Web</p>
             </div>
             <div className="bg-slate-600 p-6 rounded-lg shadow-md text-center">
               <Users className="w-12 h-12 mx-auto mb-4 text-yellow-600" />
               <h3 className="text-xl font-semibold mb-2">Redes Socias</h3>
-              <p className="text-gray-600">Conteudo para redes sociais</p>
+              <p className="text-gray-300">Conteudo para redes sociais</p>
             </div>
             <div className="bg-slate-600 p-6 rounded-lg shadow-md text-center">
               <Box className="w-12 h-12 mx-auto mb-4 text-yellow-600" />
               <h3 className="text-xl font-semibold mb-2">Modelo 3D</h3>
-              <p className="text-gray-600">Produtos em 3D para divulgação</p>
+              <p className="text-gray-300">Produtos em 3D para divulgação</p>
             </div>
             <div className="bg-slate-600 p-6 rounded-lg shadow-md text-center">
               <Video className="w-12 h-12 mx-auto mb-4 text-yellow-600" />
               <h3 className="text-xl font-semibold mb-2">Vídeos</h3>
-              <p className="text-gray-600">Edição de vídeo para redes sociais</p>
+              <p className="text-gray-300">Edição de vídeo para redes sociais</p>
             </div>
           </div>
         </div>

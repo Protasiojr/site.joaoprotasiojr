@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
-    <header className="bg-slate-950 shadow-md h-[80px]">
+    <header className="bg-slate-900 shadow-md h-[80px]">
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="text-xl font-bold text-white">
           <Link href="/">João Protásio Jr</Link>
