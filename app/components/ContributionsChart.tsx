@@ -42,11 +42,31 @@ export default function ContributionsChart() {
     plugins: {
       legend: {
         position: 'top' as const,
+        labels: {
+          color: 'white'
+        }
       },
       title: {
         display: true,
         text: 'Contribuições no GitHub - 2025',
+        color: 'white'
       },
+      tooltip: {
+        titleColor: 'white',
+        bodyColor: 'white'
+      }
+    },
+    scales: {
+      x: {
+        ticks: {
+          color: 'white'
+        }
+      },
+      y: {
+        ticks: {
+          color: 'white'
+        }
+      }
     },
   };
 
