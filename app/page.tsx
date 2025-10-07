@@ -11,10 +11,10 @@ export default function Home() {
   const dataDots = {
     labels: ['Blender', 'Inkscape', 'Gimp', 'ComfyUI', 'DAZ', '5D Render'],
     datasets: [{
-      label: 'Value',
+      label: 'Pontos',
       data: [95, 89, 80, 75, 71, 87],
       backgroundColor: 'rgba(251, 191, 36, 0.1)',
-      borderColor: '#fbbf24',
+      borderColor: '#a65f00',
       pointBackgroundColor: '#fbbf24',
       pointRadius: 5,
     }],
@@ -23,10 +23,12 @@ export default function Home() {
   const dataGridFilled = {
     labels: ['HTML', 'CSS', 'Javascript', 'Tailwind', 'Typescript', 'MySQL'],
     datasets: [{
-      label: 'Value',
+      label: 'Pontos',
       data: [97, 88, 96, 79, 93, 78],
       backgroundColor: 'rgba(251, 191, 36, 0.1)',
-      borderColor: '#fbbf24',
+      borderColor: '#a65f00',
+      pointBackgroundColor: '#fbbf24',
+      pointRadius: 5,
       fill: true,
     }],
   };
@@ -34,10 +36,12 @@ export default function Home() {
   const dataGridCircle = {
     labels: ['Imagens', 'Vídeos', 'Áudio', 'IA', 'Rede Social', 'Designer'],
     datasets: [{
-      label: 'Value',
+      label: 'Pontos',
       data: [86, 91, 82, 98, 79, 95],
       backgroundColor: 'rgba(251, 191, 36, 0.1)',
-      borderColor: '#fbbf24',
+      borderColor: '#a65f00',
+      pointBackgroundColor: '#fbbf24',
+      pointRadius: 5,
       fill: true,
     }],
   };
