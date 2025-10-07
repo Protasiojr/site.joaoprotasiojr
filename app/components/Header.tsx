@@ -1,6 +1,10 @@
+"use client";
+
 import Link from 'next/link';
+import { useState } from 'react';
 
 export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <header className="bg-slate-900 shadow-md h-[80px]">
       <div className="container mx-auto px-4 flex justify-between items-center">
@@ -34,12 +38,20 @@ export default function Header() {
           </a>
         </div>
         <div className="md:hidden">
-          <button className="text-white focus:outline-none">
+          <button className="text-white focus:outline-none" onClick={() => setIsOpen(!isOpen)}>
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
         </div>
+        {isOpen && (
+          <div className="absolute top-full left-0 w-full bg-slate-900 flex flex-col space-y-2 p-4 md:hidden">
+            <Link href="/" className="text-white hover:text-yellow-600" onClick={() => setIsOpen(false)}>Home</Link>
+            <Link href="/about" className="text-white hover:text-yellow-600" onClick={() => setIsOpen(false)}>Sobre</Link>
+            <Link href="/services" className="text-white hover:text-yellow-600" onClick={() => setIsOpen(false)}>Serviços</Link>
+            <Link href="/contact" className="text-white hover:text-yellow-600" onClick={() => setIsOpen(false)}>Contato</Link>
+          </div>
+        )}
       </div>
     </header>
   );
