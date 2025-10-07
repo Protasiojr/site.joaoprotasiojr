@@ -3,6 +3,7 @@
 import { Phone, Globe, Users, Box, Video } from 'lucide-react';
 import { Radar } from 'react-chartjs-2';
 import { Chart as ChartJS, RadialLinearScale, PointElement, LineElement, Filler, Tooltip, Legend } from 'chart.js';
+import ContributionsChart from './components/ContributionsChart';
 
 ChartJS.register(RadialLinearScale, PointElement, LineElement, Filler, Tooltip, Legend);
 
@@ -186,6 +187,12 @@ export default function Home() {
               <Radar data={dataGridCircle} options={optionsGridCircle} />
             </div>
           </div>
+        </div>
+      </section>
+      <section className="py-16 bg-slate-700">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center text-gray-200 mb-12">Contribuições no GitHub - 2025</h2>
+          <ContributionsChart />
         </div>
       </section>
     </main>
