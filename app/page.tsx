@@ -7,7 +7,7 @@ export default function Home() {
         <div className="text-left text-white max-w-md mx-4 md:ml-8">
           <h1 className="text-2xl md:text-4xl font-bold mb-4">Bem-vindo ao Site de João Protásio Jr</h1>
           <p className="text-base md:text-lg mb-8">Desenvolvedor web apaixonado por criar soluções inovadoras.</p>
-          <a href="/contact" className="bg-yellow-600 text-white px-6 py-3 rounded-lg hover:bg-yellow-700"><Phone className="inline w-5 h-5 mr-2" />Entre em Contato</a>
+          <a href="https://wa.me/5561998297054" target="_blank" className="bg-yellow-600 text-white px-6 py-3 rounded-lg hover:bg-yellow-700"><Phone className="inline w-5 h-5 mr-2" />Entre em Contato</a>
         </div>
       </section>
       <section className="py-16 bg-slate-700">
