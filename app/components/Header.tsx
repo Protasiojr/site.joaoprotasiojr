@@ -2,12 +2,12 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
-    <header className="bg-slate-950 shadow-md h-[50px]">
+    <header className="bg-slate-950 shadow-md h-[80px]">
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="text-xl font-bold text-white">
           <Link href="/">João Protásio Jr</Link>
         </div>
-        <nav className="hidden md:flex space-x-6 h-[50px] items-center">
+        <nav className="hidden md:flex space-x-6 h-[80px] items-center">
           <Link href="/" className="text-white hover:text-slate-300">Home</Link>
           <Link href="/about" className="text-white hover:text-slate-300">Sobre</Link>
           <Link href="/services" className="text-white hover:text-slate-300">Serviços</Link>
