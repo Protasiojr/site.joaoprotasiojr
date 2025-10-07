@@ -161,7 +161,7 @@ export default function Home() {
             <div className="bg-slate-600 p-6 rounded-lg shadow-md hover:shadow-lg hover:bg-slate-800 transition-all duration-300 text-center">
               <Users className="w-12 h-12 mx-auto mb-4 text-yellow-600" />
               <h3 className="text-xl font-semibold mb-2 text-gray-200">Redes Socias</h3>
-              <p className="text-gray-300">Conteudo para redes sociais</p>
+              <p className="text-gray-300">Conteúdo para redes sociais</p>
             </div>
             <div className="bg-slate-600 p-6 rounded-lg shadow-md hover:shadow-lg hover:bg-slate-800 transition-all duration-300 text-center">
               <Box className="w-12 h-12 mx-auto mb-4 text-yellow-600" />
