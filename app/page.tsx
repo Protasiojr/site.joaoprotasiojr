@@ -24,7 +24,7 @@ export default function Home() {
     datasets: [{
       label: 'Value',
       data: [97, 88, 96, 79, 93, 78],
-      backgroundColor: 'rgba(251, 191, 36, 0.6)',
+      backgroundColor: 'rgba(251, 191, 36, 0.1)',
       borderColor: '#fbbf24',
       fill: true,
     }],
@@ -35,7 +35,7 @@ export default function Home() {
     datasets: [{
       label: 'Value',
       data: [86, 91, 82, 98, 79, 95],
-      backgroundColor: 'rgba(251, 191, 36, 0.3)',
+      backgroundColor: 'rgba(251, 191, 36, 0.1)',
       borderColor: '#fbbf24',
       fill: true,
     }],
@@ -174,15 +174,15 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-center text-gray-200 mb-12">Ferramentas</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-slate-600 p-6 rounded-lg shadow-md text-center">
-              <h3 className="text-xl font-semibold mb-4 text-gray-200">Radar Chart - Dots</h3>
+              <h3 className="text-xl font-semibold mb-4 text-gray-200">Designer</h3>
               <Radar data={dataDots} options={optionsDots} />
             </div>
             <div className="bg-slate-600 p-6 rounded-lg shadow-md text-center">
-              <h3 className="text-xl font-semibold mb-4 text-gray-200">Radar Chart - Grid Filled</h3>
+              <h3 className="text-xl font-semibold mb-4 text-gray-200">Dev Web</h3>
               <Radar data={dataGridFilled} options={optionsGridFilled} />
             </div>
             <div className="bg-slate-600 p-6 rounded-lg shadow-md text-center">
-              <h3 className="text-xl font-semibold mb-4 text-gray-200">Radar Chart - Grid Circle</h3>
+              <h3 className="text-xl font-semibold mb-4 text-gray-200">Social Mídia</h3>
               <Radar data={dataGridCircle} options={optionsGridCircle} />
             </div>
           </div>
