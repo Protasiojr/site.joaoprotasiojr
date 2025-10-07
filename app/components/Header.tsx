@@ -8,10 +8,10 @@ export default function Header() {
           <Link href="/">João Protásio Jr</Link>
         </div>
         <nav className="hidden md:flex space-x-6 h-[80px] items-center">
-          <Link href="/" className="text-white hover:text-slate-300">Home</Link>
-          <Link href="/about" className="text-white hover:text-slate-300">Sobre</Link>
-          <Link href="/services" className="text-white hover:text-slate-300">Serviços</Link>
-          <Link href="/contact" className="text-white hover:text-slate-300">Contato</Link>
+          <Link href="/" className="text-white hover:text-yellow-600">Home</Link>
+          <Link href="/about" className="text-white hover:text-yellow-600">Sobre</Link>
+          <Link href="/services" className="text-white hover:text-yellow-600">Serviços</Link>
+          <Link href="/contact" className="text-white hover:text-yellow-600">Contato</Link>
         </nav>
         <div className="md:hidden">
           <button className="text-white focus:outline-none">
