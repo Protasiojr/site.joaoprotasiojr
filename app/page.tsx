@@ -4,6 +4,8 @@ import { Phone, Globe, Users, Box, Video } from 'lucide-react';
 import { Radar } from 'react-chartjs-2';
 import { Chart as ChartJS, RadialLinearScale, PointElement, LineElement, Filler, Tooltip, Legend } from 'chart.js';
 import ContributionsChart from './components/ContributionsChart';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
+import Image from 'next/image';
 
 ChartJS.register(RadialLinearScale, PointElement, LineElement, Filler, Tooltip, Legend);
 
@@ -197,6 +199,53 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-gray-200 mb-12">Contribuições no GitHub - 2025</h2>
           <ContributionsChart />
+        </div>
+      </section>
+      <section className="py-16 bg-slate-800">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center text-gray-200 mb-12">Ferramentas de Design</h2>
+          <Carousel className="w-full max-w-4xl mx-auto">
+            <CarouselContent>
+              <CarouselItem>
+                <div className="flex flex-col items-center">
+                  <Image src="/blender.png" alt="Blender" width={128} height={128} className="w-32 h-32 object-contain mb-4" />
+                  <h3 className="text-xl font-semibold text-gray-200">Blender</h3>
+                </div>
+              </CarouselItem>
+              <CarouselItem>
+                <div className="flex flex-col items-center">
+                  <Image src="/inkscape.png" alt="Inkscape" width={128} height={128} className="w-32 h-32 object-contain mb-4" />
+                  <h3 className="text-xl font-semibold text-gray-200">Inkscape</h3>
+                </div>
+              </CarouselItem>
+              <CarouselItem>
+                <div className="flex flex-col items-center">
+                  <Image src="/gimp.png" alt="Gimp" width={128} height={128} className="w-32 h-32 object-contain mb-4" />
+                  <h3 className="text-xl font-semibold text-gray-200">Gimp</h3>
+                </div>
+              </CarouselItem>
+              <CarouselItem>
+                <div className="flex flex-col items-center">
+                  <Image src="/daz.png" alt="DAZ" width={128} height={128} className="w-32 h-32 object-contain mb-4" />
+                  <h3 className="text-xl font-semibold text-gray-200">DAZ</h3>
+                </div>
+              </CarouselItem>
+              <CarouselItem>
+                <div className="flex flex-col items-center">
+                  <Image src="/D5.png" alt="D5 Render" width={128} height={128} className="w-32 h-32 object-contain mb-4" />
+                  <h3 className="text-xl font-semibold text-gray-200">D5 Render</h3>
+                </div>
+              </CarouselItem>
+              <CarouselItem>
+                <div className="flex flex-col items-center">
+                  <Image src="/comfyui.png" alt="ComfyUI" width={128} height={128} className="w-32 h-32 object-contain mb-4" />
+                  <h3 className="text-xl font-semibold text-gray-200">ComfyUI</h3>
+                </div>
+              </CarouselItem>
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
         </div>
       </section>
     </main>
